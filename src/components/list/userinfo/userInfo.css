@@ -7,7 +7,7 @@
  .user{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     img{
         width: 50px;
@@ -15,6 +15,22 @@
         border-radius: 50%;
         object-fit: cover;
     }
+ }
+
+ .user-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2px;
+ }
+
+ .user-text h2 {
+    margin: 0;
+ }
+
+ .user-text p {
+    margin: 0;
+    opacity: 0.7;
+    color: #e0e0e0;
  }
 
  .icons{
