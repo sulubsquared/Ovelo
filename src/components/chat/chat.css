@@ -59,6 +59,75 @@
     .center{
         padding: 20px;
         flex: 1;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(33, 17, 40, 0.2);
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(33, 17, 40, 0.5);
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(33, 17, 40, 0.8);
+        }
+
+        .message{
+            max-width: 70%;
+            display: flex;
+            gap: 20px;
+
+            &.own{
+                align-self: flex-end;
+
+                .texts{
+                    p{
+                        background-color: #bf51fe;
+                    }
+                }
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .texts{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+
+                p{
+                    padding: 20px;
+                    background-color: rgba(33, 17, 40, 0.3);
+                    border-radius: 10px;
+                }
+
+                span{
+                    font-size: 13px;
+                }
+            }
+        }
     }
 
     .bottom{
@@ -103,7 +172,7 @@
     
         }
         .sendButton{
-            background-color: #9b50a8;
+            background-color: #bf51fe;
             color: white;
             padding: 10px 20px;
             border: none;
