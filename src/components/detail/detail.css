@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
         border-bottom: 1px solid #dddddd35;
 
         img{
@@ -23,7 +23,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
     flex: 1;
     overflow-y: auto;
 
@@ -92,7 +92,7 @@
     }
 }
     button {
-        padding: 10px 20px;
+        padding: 15px;
         background-color: rgba(255, 72, 59, 0.55);
         color: white;
         border: none;
@@ -101,6 +101,12 @@
 
         &:hover {
             background-color: rgba(243, 69, 56, 0.842);
+        }
+
+
+        &.logout{
+            padding: 10px;
+            background-color: rgba(56, 199, 243, 0.836);
         }
     }
 }
